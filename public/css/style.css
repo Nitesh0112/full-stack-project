@@ -9,7 +9,36 @@ body {
     flex: 1;
 }
 
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+
 /* Navbar */
+
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 0.6rem 1rem;
+  }
+
+  .fa-compass {
+    font-size: 1.6rem;
+  }
+
+  .nav-link {
+    padding: 0.4rem 0;
+    font-size: 0.95rem;
+  }
+}
+
 .navbar {
     height: 5rem;
     background-color: white;
@@ -25,6 +54,25 @@ body {
 }
 
 /* footer */
+@media (max-width: 768px) {
+  .f-info {
+    height: auto;
+    padding: 1rem 0;
+    gap: 0.6rem;
+  }
+
+  .f-info-links,
+  .f-info-socials,
+  .f-info-brand {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .f-info-socials i {
+    margin-right: 0.5rem;
+  }
+}
+
 .f-info-links a {
     text-decoration: none;
     color: #222222;
@@ -58,6 +106,20 @@ body {
 }
 
 /* Cards */
+@media (max-width: 768px) {
+  .listing-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .card-img-top {
+    height: 220px;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
 .listing-card {
     border: none !important;
     margin-bottom: 2rem;
@@ -104,6 +166,17 @@ body {
 }
 
 /* Show Page */
+@media (max-width: 768px) {
+  .btns {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .btns .btn {
+    width: 100%;
+  }
+}
+
 .show.img {
     height: 30vh;
 }
@@ -121,4 +194,18 @@ body {
 #map { 
     width: 80vh;
     height: 400px;
+}
+
+@media (max-width: 480px) {
+  .card-img-top {
+    height: 200px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .fa-compass {
+    font-size: 1.4rem;
+  }
 }
